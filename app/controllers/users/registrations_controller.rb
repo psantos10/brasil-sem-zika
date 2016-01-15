@@ -1,5 +1,6 @@
 class Users::RegistrationsController < Devise::RegistrationsController
 
+  before_action :configure_permitted_parameters
 
   # Overwrite update_resource to let users to update their user without giving their password
   def update_resource(resource, params)
@@ -10,8 +11,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
       resource.update_with_password(params)
     end
   end
-
-  before_action :configure_permitted_parameters
 
   protected
 
