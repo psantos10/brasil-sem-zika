@@ -27,9 +27,6 @@ gem 'omniauth-twitter', '~> 1.2.1'
 gem 'omniauth-facebook', '~> 3.0.0'
 gem 'twitter', '~> 5.15.0'
 
-# Code Style (https://github.com/bbatsov/rubocop)
-gem 'rubocop', '~> 0.35.1'
-
 # Upload files
 gem "refile", '~> 0.6.2', require: "refile/rails"
 gem "refile-mini_magick", '~> 0.2.0'
@@ -49,6 +46,7 @@ end
 group :development, :test do
   gem 'byebug', '~> 8.2.1'
   gem 'dotenv-rails', '~> 2.0.2'
+  gem 'rubocop', '~> 0.36.0'
   gem 'rspec-rails', '~> 3.0'
   gem 'shoulda-matchers', '~> 3.0'
   gem 'factory_girl_rails' ,'~> 4.0'
