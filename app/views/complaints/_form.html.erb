@@ -1,7 +1,7 @@
 <%= simple_form_for(@complaint) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
+  <div class="form-inputs" data-module="ui/state-selector">
     <%= f.input :address %>
     <%= f.input :cep %>
     <%= f.input :state_id, collection: @states, label: 'Estado' %>
