@@ -8,7 +8,6 @@ gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails', '~> 4.0.5'
-gem 'turbolinks', '~> 2.5.3'
 gem 'jbuilder', '~> 2.0'
 gem 'pundit', '~> 1.0.1'
 gem 'simple_form', '~> 3.2.1'
@@ -41,6 +40,7 @@ gem 'binding_of_caller', '~> 0.7.2'
 source 'https://rails-assets.org' do
   gem 'rails-assets-font-awesome', '~> 4.5.0'
   gem 'rails-assets-bootstrap-sass', '~> 3.3.6'
+  gem 'rails-assets-modulejs', '~> 1.13.0'
 end
 
 group :development, :test do
