@@ -2,6 +2,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sass
+//= require refile
 //= require_tree ./modules
 
 

@@ -7,6 +7,7 @@
     <%= f.input :state_id, collection: @states, label: 'Estado' %>
     <%= f.input :city_id, collection: @states, as: :grouped_select,
 			group_method: :cities, label: 'Cidade' %>
+    <%= f.attachment_field :picture, direct: true %>
   </div>
 
   <div class="form-actions">

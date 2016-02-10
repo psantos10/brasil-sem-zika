@@ -20,5 +20,7 @@
   <%= @complaint.city.name %>
 </p>
 
+<%= image_tag attachment_url(@complaint, :picture, :fill, 300, 300) %>
+
 <%= link_to 'Editar', edit_complaint_path(@complaint) %> |
 <%= link_to 'Voltar', complaints_path %>
