@@ -1,0 +1,16 @@
+<%= simple_form_for(@complaint) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs" data-module="ui/state-selector">
+    <%= f.input :address %>
+    <%= f.input :cep %>
+    <%= f.input :state_id, collection: @states, label: 'Estado' %>
+    <%= f.input :city_id, collection: @states, as: :grouped_select,
+			group_method: :cities, label: 'Cidade' %>
+    <%= f.attachment_field :picture, direct: true %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

@@ -11,10 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160102174249) do
+ActiveRecord::Schema.define(version: 20160129204356) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cities", force: :cascade do |t|
+    t.string   "name"
+    t.boolean  "capital"
+    t.integer  "state_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "cities", ["state_id"], name: "index_cities_on_state_id", using: :btree
+
+  create_table "complaints", force: :cascade do |t|
+    t.string   "address"
+    t.string   "cep"
+    t.integer  "state_id"
+    t.integer  "city_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "picture_id"
+  end
+
+  add_index "complaints", ["city_id"], name: "index_complaints_on_city_id", using: :btree
+  add_index "complaints", ["state_id"], name: "index_complaints_on_state_id", using: :btree
+
+  create_table "states", force: :cascade do |t|
+    t.string   "name"
+    t.string   "acronym"
+    t.integer  "address_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "states", ["address_id"], name: "index_states_on_address_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -39,4 +72,7 @@ ActiveRecord::Schema.define(version: 20160102174249) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["uid"], name: "index_users_on_uid", using: :btree
 
+  add_foreign_key "cities", "states"
+  add_foreign_key "complaints", "cities"
+  add_foreign_key "complaints", "states"
 end

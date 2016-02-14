@@ -1,5 +1,16 @@
+//= require modulejs
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require bootstrap-sass
-//= require_tree .
+//= require refile
+//= require_tree ./modules
+
+
+(function(){
+	'use strict';
+
+	$(document).ready(function(){
+		modulejs.require('initializer');
+	});
+})();
+
