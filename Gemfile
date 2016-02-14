@@ -20,7 +20,7 @@ gem 'activerecord-postgis-adapter', '~> 3.1.2'
 gem 'rgeo', '~> 0.5.2'
 
 # A.C.L layer
-gem 'devise', '~>3.5.2'
+gem 'devise', '~>3.5.6'
 gem 'omniauth', '~> 1.3.1'
 gem 'omniauth-twitter', '~> 1.2.1'
 gem 'omniauth-facebook', '~> 3.0.0'
