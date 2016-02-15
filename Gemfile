@@ -9,7 +9,6 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.4'
-gem 'pundit', '~> 1.1.0'
 gem 'simple_form', '~> 3.2.1'
 
 # Database
@@ -22,16 +21,11 @@ gem 'rgeo', '~> 0.5.2'
 # A.C.L layer
 gem 'devise', '~>3.5.6'
 gem 'omniauth', '~> 1.3.1'
-gem 'omniauth-twitter', '~> 1.2.1'
 gem 'omniauth-facebook', '~> 3.0.0'
-gem 'twitter', '~> 5.16.0'
 
 # Upload files
 gem "refile", '~> 0.6.2', require: "refile/rails"
 gem "refile-mini_magick", '~> 0.2.0'
-
-# Documentation
-gem 'swagger-docs', '~> 0.2.8'
 
 # Errors
 gem 'better_errors', '~> 2.1.1'
@@ -51,8 +45,4 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'factory_girl_rails' ,'~> 4.6'
   gem 'capybara', '~> 2.6.2'
-end
-
-group :development do
-  gem 'web-console', '~> 3.1', '>= 3.1.1'
 end
