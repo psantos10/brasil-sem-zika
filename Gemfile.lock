@@ -269,7 +269,7 @@ DEPENDENCIES
   activerecord-postgis-adapter (~> 3.1.4)
   better_errors (~> 2.1.1)
   binding_of_caller (~> 0.7.2)
-  bundler (>= 1.11.2)
+  bundler (>= 1.9.7)
   byebug (~> 8.2.2)
   capybara (~> 2.6.2)
   devise (~> 3.5.6)
