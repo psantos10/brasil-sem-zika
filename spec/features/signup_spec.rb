@@ -29,4 +29,13 @@ describe 'Sign up' do
       expect(subject).to have_content 'Welcome! You have signed up successfully'
     end
   end
+
+  context 'when user enter a facebook account' do
+    it "allows sign up through facebook" do
+      mock_hash
+
+      click_link 'Sign in with Facebook'
+      expect(subject).to have_content 'Successfully authenticated from Facebook account'
+    end
+  end
 end
