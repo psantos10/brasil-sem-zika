@@ -1,5 +1,11 @@
 # Rails sem Zika!
 
+http://www.brasilsemzika.com
+
+Link Provisório: http://brasilsemzika.herokuapp.com
+
+[![Code Climate](https://codeclimate.com/github/pnaponoceno/learning-ruby/badges/gpa.svg)](https://codeclimate.com/github/pnaponoceno/learning-ruby)
+
 Projeto que visa estimular programadores e designers à desenvolverem um projeto real, utilizando framework Ruby on Rails.
 A ideia é criar uma espécie de "mapa da dengue", onde devem ser cadastrados focos do mosquito, áreas de maior índice da doença, bem como denunciar possíveis focos.
 
