@@ -4,6 +4,7 @@ URL: http://www.brasilsemzika.com
 
 [![Code Climate](https://codeclimate.com/github/pnaponoceno/learning-ruby/badges/gpa.svg)](https://codeclimate.com/github/pnaponoceno/learning-ruby)
 [![Dependency Status](https://gemnasium.com/learning-ruby/brasil-sem-zika.svg)](https://gemnasium.com/learning-ruby/brasil-sem-zika)
+[![Build Status](https://travis-ci.org/learning-ruby/brasil-sem-zika.svg?branch=dev)](https://travis-ci.org/learning-ruby/brasil-sem-zika)
 
 Projeto que visa estimular programadores e designers à desenvolverem um projeto real, utilizando framework Ruby on Rails.
 A ideia é criar uma espécie de "mapa da dengue", onde devem ser cadastrados focos do mosquito, áreas de maior índice da doença, bem como denunciar possíveis focos.
