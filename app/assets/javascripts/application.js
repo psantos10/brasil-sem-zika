@@ -5,6 +5,7 @@
 //= require refile
 //= require_tree ./modules
 
+//= require app
 
 (function(){
 	'use strict';
