@@ -5,7 +5,7 @@
 //= require refile
 //= require_tree ./modules
 
-//= require app
+//= require adminlte
 
 (function(){
 	'use strict';
@@ -14,4 +14,3 @@
 		modulejs.require('initializer');
 	});
 })();
-
