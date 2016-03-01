@@ -4,6 +4,8 @@
 */
 
 @import "bootstrap-sass";
+$fa-font-path: "font-awesome/fonts";
+@import "font-awesome";
 @import "devise/login";
 
 .container {
