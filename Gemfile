@@ -4,7 +4,7 @@ ruby '2.3.0'
 
 gem 'bundler', '>= 1.9.7'
 
-gem 'rails', '4.2.5.1'
+gem 'rails', '4.2.6'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails', '~> 4.1.0'
@@ -16,7 +16,7 @@ gem 'pg'
 
 # Geoserver adapter
 gem 'activerecord-postgis-adapter', '~> 3.1.4'
-gem 'rgeo', '~> 0.5.2'
+gem 'rgeo', '~> 0.5.3'
 
 # A.C.L layer
 gem 'devise', '~>3.5.6'
