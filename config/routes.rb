@@ -5,7 +5,11 @@ Rails.application.routes.draw do
     registrations: "users/registrations" }
 
   root 'home#index'
-  get 'about' => 'home#about'
+  
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6d88779f48081856fcb9a7531014165a8b3d5d33
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
