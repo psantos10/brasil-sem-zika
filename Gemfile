@@ -9,6 +9,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.4'
+gem 'pundit', '~> 1.0.1'
 gem 'simple_form', '~> 3.2.1'
 
 # Database
@@ -45,4 +46,9 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 3.1'
   gem 'factory_girl_rails' ,'~> 4.6'
   gem 'capybara', '~> 2.6.2'
+  gem 'faker', '~> 1.6.3'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
 end
