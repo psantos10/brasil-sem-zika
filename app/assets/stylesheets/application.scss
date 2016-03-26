@@ -15,6 +15,9 @@ $fa-font-path: "font-awesome/fonts";
 	margin-left: auto;
 }
 
+.content-wrapper {
+    padding-bottom: 50px;
+}
 #photo img {
 	border-radius: 50%;
 	margin-top: 10px;
@@ -23,3 +26,12 @@ $fa-font-path: "font-awesome/fonts";
 .title {
 	text-align: center;
 }
+
+.centered-div {
+    margin: 0 auto;
+    text-align: center;
+    img {
+        margin-bottom: 20px;
+    }
+}
+

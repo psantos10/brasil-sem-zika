@@ -2,6 +2,9 @@
 modulejs.define('ui/state-selector', function(){
 	var dynamicSelect = {
 		init: function() {
+            // Style input button
+            $(':file').filestyle({icon: false});
+
 			$('#complaint_city_id').prop('disabled', true);
 			var cities = $('#complaint_city_id').html();
 
