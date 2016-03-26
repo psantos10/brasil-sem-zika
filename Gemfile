@@ -33,7 +33,7 @@ gem 'binding_of_caller', '~> 0.7.2'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-font-awesome', '~> 4.5.0'
-  gem 'rails-assets-bootstrap-sass', '~> 3.3.6'
+  gem 'rails-assets-bootstrap', '~> 3.3.6'
   gem 'rails-assets-modulejs', '~> 1.13.0'
   gem 'rails-assets-bootstrap-filestyle', '~> 1.2.1'
   gem 'rails-assets-adminlte'

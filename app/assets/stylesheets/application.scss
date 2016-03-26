@@ -1,9 +1,9 @@
 /*
+*= require bootstrap
 *= require adminlte
 *= require skin-purple
 */
 
-@import "bootstrap-sass";
 $fa-font-path: "font-awesome/fonts";
 @import "font-awesome";
 @import "devise/login";

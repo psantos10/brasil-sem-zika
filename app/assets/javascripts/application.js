@@ -1,7 +1,7 @@
 //= require modulejs
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sass
+//= require bootstrap
 //= require bootstrap-filestyle
 //= require refile
 //= require_tree ./modules
