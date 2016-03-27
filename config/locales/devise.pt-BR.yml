@@ -1,15 +1,6 @@
 pt-BR:
-  activerecord:
-    attributes:
-      user:
-        current_password: Senha atual
-        email: Email
-        password: Senha
-        password_confirmation: Confirme sua senha
-        remember_me: Lembre-se de mim
-    models:
-      user: Usuário
   devise:
+    greeting: Bem-vindo %{recipient}!
     confirmations:
       confirmed: A sua conta foi confirmada com sucesso.
       new:
@@ -29,7 +20,6 @@ pt-BR:
     mailer:
       confirmation_instructions:
         action: Confirmar minha conta
-        greeting: Bem-vindo %{recipient}!
         instruction: 'Você pode confirmar sua conta através do link abaixo:'
         subject: Instruções de confirmação
       password_change:
@@ -58,6 +48,7 @@ pt-BR:
         change_your_password: Alterar sua senha
         confirm_new_password: Confirme sua nova senha
         new_password: Nova senha
+      minimum_password_length: Mínimo de %{length} caracteres
       new:
         forgot_your_password: Esqueceu sua senha?
         send_me_reset_password_instructions: Enviar instruções para redefinição da senha
