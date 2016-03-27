@@ -20,6 +20,7 @@ gem 'rgeo', '~> 0.5.3'
 
 # A.C.L layer
 gem 'devise', '~>3.5.6'
+gem 'devise-i18n', '~> 1.0.0'
 gem 'omniauth', '~> 1.3.1'
 gem 'omniauth-facebook', '~> 3.0.0'
 

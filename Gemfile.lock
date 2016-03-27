@@ -70,6 +70,7 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise-i18n (1.0.0)
     diff-lcs (1.2.5)
     domain_name (0.5.20160216)
       unf (>= 0.0.5, < 1.0.0)
@@ -282,6 +283,7 @@ DEPENDENCIES
   byebug (~> 8.2.2)
   capybara (~> 2.6.2)
   devise (~> 3.5.6)
+  devise-i18n (~> 1.0.0)
   dotenv-rails (~> 2.1.0)
   factory_girl_rails (~> 4.6)
   faker (~> 1.6.3)
