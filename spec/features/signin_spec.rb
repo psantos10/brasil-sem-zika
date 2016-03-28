@@ -8,23 +8,23 @@ describe 'Sign in feature' do
 
   context 'when the user is registered' do
     it 'allows to sign in' do
-      fill_in 'Email', with: user.email
-      fill_in 'Password', with: user.password
+      fill_in 'user[email]', with: user.email
+      fill_in 'user[password]', with: user.password
 
-      click_button 'Log in'
+      click_button I18n.t('devise.sessions.new.sign_in')
 
-      expect(subject).to have_content 'Signed in successfully'
+      expect(subject).to have_content I18n.t('devise.sessions.signed_in')
     end
   end
 
   context 'when the user isnt registered' do
     it 'doesnt allow to sign in' do
-      fill_in 'Email', with: 'unregistered@example.com'
-      fill_in 'Password', with: 'password'
+      fill_in 'user[email]', with: 'unregistered@example.com'
+      fill_in 'user[password]', with: 'password'
 
-      click_button 'Log in'
+      click_button I18n.t('devise.sessions.new.sign_in')
 
-      expect(subject).to have_content 'Invalid email or password'
+      expect(subject).to have_content I18n.t('devise.failure.invalid', authentication_keys: 'email')
     end
   end
 end

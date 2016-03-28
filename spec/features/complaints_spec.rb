@@ -10,12 +10,12 @@ RSpec.feature 'Create a complaint', type: :feature do
   context 'when a user fills the form with valid data' do
     it 'allows the creation' do
       visit new_complaint_path
-      fill_in 'Cep', with: '48370-000'
-      fill_in 'Address', with: 'Rua da linha, 06'
-      select 'Westeros', from: 'Estado'
-      select 'Winterfell', from: 'Cidade'
+      fill_in 'complaint[cep]', with: '48370-000'
+      fill_in 'complaint[address]', with: 'Rua da linha, 06'
+      select 'Westeros', from: 'complaint[state_id]'
+      select 'Winterfell', from: 'complaint[city_id]'
 
-      click_button 'Create Complaint'
+      click_button I18n.t('helpers.submit.complaint.create')
 
       expect(page).to have_content('Complaint was successfully created.')
     end
@@ -25,7 +25,7 @@ RSpec.feature 'Create a complaint', type: :feature do
     it 'dosent allow the creation' do
       visit new_complaint_path
 
-      click_button 'Create Complaint'
+      click_button I18n.t('helpers.submit.complaint.create')
 
       expect(page).to_not have_content('Complaint was successfully created.')
     end

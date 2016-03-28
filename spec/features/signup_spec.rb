@@ -8,25 +8,25 @@ describe 'Sign up' do
 
   context 'when the form is filled with invalid data' do
     it 'doesnt allow to sign up' do
-      fill_in 'Email', with: 'invalid_email'
-      fill_in 'Password', with: 'invalid', match: :prefer_exact
-      fill_in 'Password confirmation', with: 'unmatched_password'
+      fill_in 'user[email]', with: 'invalid_email'
+      fill_in 'user[password]', with: 'invalid', match: :prefer_exact
+      fill_in 'user[password_confirmation]', with: 'unmatched_password'
 
-      click_button 'Sign up'
+      click_button I18n.t('devise.registrations.new.sign_up')
 
-      expect(subject).to have_content 'Please review the problems below'
+      expect(subject).to have_content I18n.t('simple_form.error_notification.default_message')
     end
   end
 
   context 'when the form is filled with valid data' do
     it 'allows to sign up' do
-      fill_in 'Email', with: user.email
-      fill_in 'Password', with: user.password, match: :prefer_exact
-      fill_in 'Password confirmation', with: user.password
+      fill_in 'user[email]', with: user.email
+      fill_in 'user[password]', with: user.password, match: :prefer_exact
+      fill_in 'user[password_confirmation]', with: user.password
 
-      click_button 'Sign up'
+      click_button I18n.t('devise.registrations.new.sign_up')
 
-      expect(subject).to have_content 'Welcome! You have signed up successfully'
+      expect(subject).to have_content I18n.t('devise.registrations.signed_up')
     end
   end
 
@@ -34,8 +34,8 @@ describe 'Sign up' do
     it "allows sign up through facebook" do
       mock_hash
 
-      click_link 'Sign in with Facebook'
-      expect(subject).to have_content 'Successfully authenticated from Facebook account'
+      click_link I18n.t('devise.shared.links.sign_in_with_provider', provider: 'Facebook')
+      expect(subject).to have_content I18n.t('devise.omniauth_callbacks.success', kind: 'Facebook')
     end
   end
 end
