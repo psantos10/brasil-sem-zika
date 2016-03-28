@@ -2,7 +2,7 @@
   <%= f.error_notification %>
 
 	<div class="col-md-6 centered-div">
-		<h4>Insira uma imagem do local</h4>
+		<h4><%= t('complaint.form.insert_image') %></h4>
 		<%= image_tag 'placehold-image' %>
 		<br />
 		<%= f.attachment_field :picture, direct: true %>
@@ -10,13 +10,12 @@
   <div class="form-inputs col-md-6" data-module="ui/state-selector">
     <%= f.input :address %>
     <%= f.input :cep %>
-    <%= f.input :state_id, collection: @states, label: 'Estado' %>
+    <%= f.input :state_id, collection: @states %>
     <%= f.input :city_id, collection: @states, as: :grouped_select,
-			group_method: :cities, label: 'Cidade' %>
+			group_method: :cities %>
 		<br />
 		<div class="centered-div">
 			<%= f.button :submit %>
 		</div>
 	</div>
 <% end %>
-

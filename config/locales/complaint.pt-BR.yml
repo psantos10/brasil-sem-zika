@@ -1,0 +1,14 @@
+pt-BR:
+  complaint:
+    new:
+      title: Cadastrar Denúncia
+      link: "Nova Denúncia"
+    edit:
+      title: Editar Denúncia
+    form:
+      insert_image: Inserir imagem
+  helpers:
+    submit:
+      complaint:
+        create: Cadastrar Denúncia
+        update: Atualizar Denúncia

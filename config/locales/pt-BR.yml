@@ -1,4 +1,12 @@
 pt-BR:
+  defaults:
+    models:
+      show: Ver
+      edit: Editar
+      delete:
+        link: Deletar
+        confirm_message: Você tem certeza?
+      back: Voltar
   activerecord:
     attributes:
       user:
@@ -16,3 +24,22 @@ pt-BR:
           attributes:
             reset_password_token:
               invalid: inválido
+  header:
+    join_us: Participe
+    about_project: Sobre o projeto
+    member_since: Membro desde
+    profile: Perfil
+    logout: Logout
+  index:
+    registered_outbreaks: Focos Cadastrados
+    registered_people: Pessoas Cadastradas
+    case_report: Relato de Casos
+    increase_last_month: "Aumento de %{percentage}% no último mês"
+    report_outbreak: Denuncie um foco
+  about:
+    about_us: Quem somos
+    contributors: Os contribuidores
+    our_goal: Nosso objetivo
+  footer:
+    version: Versão
+    all_rights_reserved: Todos os direitos reservados.

@@ -3,13 +3,13 @@
 		<div class="info-box bg-green">
 			<span class="info-box-icon"><i class="fa fa-check-square-o"></i></span>
 			<div class="info-box-content">
-				<span class="info-box-text">Focos Cadastrados</span>
+				<span class="info-box-text"><%= t('index.registered_outbreaks') %></span>
 				<span class="info-box-number">25</span>
 				<div class="progress">
 					<div class="progress-bar" style="width: 70%"></div>
 				</div>
 				<span class="progress-description">
-					Aumento de 70% no ultimo mês
+					<%= t('index.increase_last_month', percentage: 70) %>
 				</span>
 			</div><!-- /.info-box-content -->
 		</div><!-- /.info-box -->
@@ -18,13 +18,13 @@
 		<div class="info-box bg-green">
 			<span class="info-box-icon"><i class="fa fa-user-plus"></i></span>
 			<div class="info-box-content">
-				<span class="info-box-text">Pessoas Cadastradas</span>
+				<span class="info-box-text"><%= t('index.registered_people') %></span>
 				<span class="info-box-number">120</span>
 				<div class="progress">
 					<div class="progress-bar" style="width: 70%"></div>
 				</div>
 				<span class="progress-description">
-					Aumento de 15% no ultimo mês
+					<%= t('index.increase_last_month', percentage: 15) %>
 				</span>
 			</div><!-- /.info-box-content -->
 		</div><!-- /.info-box -->
@@ -33,13 +33,13 @@
 		<div class="info-box bg-red">
 			<span class="info-box-icon"><i class="fa fa-hospital-o"></i></span>
 			<div class="info-box-content">
-				<span class="info-box-text">Relato de casos</span>
+				<span class="info-box-text"><%= t('index.case_report') %></span>
 				<span class="info-box-number">70</span>
 				<div class="progress">
 					<div class="progress-bar" style="width: 70%"></div>
 				</div>
 				<span class="progress-description">
-					Aumento de 10% no ultimo mês
+					<%= t('index.increase_last_month', percentage: 10) %>
 				</span>
 			</div><!-- /.info-box-content -->
 		</div><!-- /.info-box -->
@@ -49,8 +49,7 @@
 	<div class="col-md-12">
 		<div class="box">
 			<div class="box-body">
-				<font size="50"><%= link_to "Denuncie um foco", new_complaint_path %></font>
-				
+				<font size="50"><%= link_to t('index.report_outbreak'), new_complaint_path %></font>
 			</div>
 		</div>
 	</div>

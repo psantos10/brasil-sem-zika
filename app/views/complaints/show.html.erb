@@ -1,26 +1,26 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Endereço:</strong>
+  <strong><%= t('simple_form.labels.defaults.address') %>:</strong>
   <%= @complaint.address %>
 </p>
 
 <p>
-  <strong>CEP:</strong>
+  <strong><%= t('simple_form.labels.defaults.cep') %>:</strong>
   <%= @complaint.cep %>
 </p>
 
 <p>
-  <strong>Estado:</strong>
+  <strong><%= t('simple_form.labels.defaults.state_id') %>:</strong>
   <%= @complaint.state.name %>
 </p>
 
 <p>
-  <strong>Cidade:</strong>
+  <strong><%= t('simple_form.labels.defaults.city_id') %>:</strong>
   <%= @complaint.city.name %>
 </p>
 
 <%= image_tag attachment_url(@complaint, :picture, :fill, 300, 300) %>
 
-<%= link_to 'Editar', edit_complaint_path(@complaint) %> |
-<%= link_to 'Voltar', complaints_path %>
+<%= link_to t('defaults.models.edit'), edit_complaint_path(@complaint) %> |
+<%= link_to t('defaults.models.back'), complaints_path %>

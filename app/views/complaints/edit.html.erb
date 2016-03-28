@@ -1,6 +1,8 @@
-<h1>Editing Complaint</h1>
+<div class="page-header">
+	<h1><%= t('complaint.edit.title') %></h1>
+</div>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @complaint %> |
-<%= link_to 'Back', complaints_path %>
+<%= link_to t('defaults.models.show'), @complaint %> |
+<%= link_to t('defaults.models.back'), complaints_path %>

@@ -1,0 +1,14 @@
+en:
+  complaint:
+    new:
+      title: New Complaint
+      link: "New Complaint"
+    edit:
+      title: Update Complaint
+    form:
+      insert_image: Insert image
+  helpers:
+    submit:
+      complaint:
+        create: Create Complaint
+        update: Update Complaint

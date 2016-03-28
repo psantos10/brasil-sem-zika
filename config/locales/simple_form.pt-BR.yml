@@ -5,16 +5,14 @@ pt-BR:
     required:
       text: 'Obrigatório'
       mark: '*'
-      # You can uncomment the line below if you need to overwrite the whole required html.
-      # When using html, text and mark won't be used.
-      # html: '<abbr title="required">*</abbr>'
     error_notification:
       default_message: "Por favor, verifique os erros abaixo:"
-    # Examples
-    # labels:
-    #   defaults:
-    #     password: 'Password'
-    #   user:
+    labels:
+      defaults:
+        address: Endereço
+        cep: CEP
+        state_id: Estado
+        city_id: Cidade
     #     new:
     #       email: 'E-mail to sign in.'
     #     edit:

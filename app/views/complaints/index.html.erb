@@ -9,10 +9,10 @@
 		<table class="table table-striped">
 			<thead>
 				<tr>
-					<th>Endereço</th>
-					<th>CEP</th>
-					<th>Estado</th>
-					<th>Cidade</th>
+					<th><%= t('simple_form.labels.defaults.address') %></th>
+					<th><%= t('simple_form.labels.defaults.cep') %></th>
+					<th><%= t('simple_form.labels.defaults.state_id') %></th>
+					<th><%= t('simple_form.labels.defaults.city_id') %></th>
 					<th colspan="3"></th>
 				</tr>
 			</thead>
@@ -24,9 +24,10 @@
 						<td><%= complaint.cep %></td>
 						<td><%= complaint.state.name %></td>
 						<td><%= complaint.city.name %></td>
-						<td><%= link_to 'Ver', complaint %></td>
-						<td><%= link_to 'Editar', edit_complaint_path(complaint) %></td>
-						<td><%= link_to 'Deletar', complaint, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+						<td><%= link_to t('defaults.models.show'), complaint %></td>
+						<td><%= link_to t('defaults.models.edit'), edit_complaint_path(complaint) %></td>
+						<td><%= link_to t('defaults.models.delete.link'), complaint, method: :delete,
+														data: { confirm: t('defaults.models.delete.confirm_message') } %></td>
 					</tr>
 				<% end %>
 			</tbody>
@@ -34,5 +35,4 @@
 	</div>
 </div>
 
-<%= link_to 'Nova Denuncia', new_complaint_path %>
-
+<%= link_to t('complaint.new.link'), new_complaint_path %>
