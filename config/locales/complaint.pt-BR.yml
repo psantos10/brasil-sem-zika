@@ -6,7 +6,7 @@ pt-BR:
     edit:
       title: Editar Denúncia
     form:
-      insert_image: Inserir imagem
+      insert_image: Insira uma imagel do local
   helpers:
     submit:
       complaint:

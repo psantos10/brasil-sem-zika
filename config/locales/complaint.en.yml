@@ -6,7 +6,7 @@ en:
     edit:
       title: Update Complaint
     form:
-      insert_image: Insert image
+      insert_image: Insert a picture of the place
   helpers:
     submit:
       complaint:
