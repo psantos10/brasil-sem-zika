@@ -14,6 +14,10 @@ en:
         email: Email
         password: Password
         password_confirmation: Confirm your password
+        first_name: First Name
+        last_name: Last Name
+        address: Address
+        cpf: CPF
         remember_me: Remember me
         reset_password_token: Token
     models:

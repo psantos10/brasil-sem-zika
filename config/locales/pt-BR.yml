@@ -14,6 +14,10 @@ pt-BR:
         email: Email
         password: Senha
         password_confirmation: Confirme sua senha
+        first_name: Primeiro Nome
+        last_name: Sobrenome
+        address: Endereço
+        cpf: CPF
         remember_me: Lembre-se de mim
         reset_password_token: Token
     models:
