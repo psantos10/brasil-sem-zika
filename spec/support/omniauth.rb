@@ -6,7 +6,10 @@ module OmniauthMacros
       'uid' => '1234434',
       'info' => {
         'email' => 'joe@bloggs.com',
-        'image' => 'https://graph.facebook.com/1234567/picture?type=square'
+        'image' => 'https://graph.facebook.com/1234567/picture?type=square',
+        'first_name' => 'Joe',
+        'last_name' => 'Smith',
+        'location' => 'São Paulo, SP'
       }
     }
   end
@@ -15,4 +18,3 @@ end
 RSpec.configure do |config|
   config.include(OmniauthMacros)
 end
-
