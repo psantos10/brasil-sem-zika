@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :complaints
 
   get 'about' => 'home#about'
+  get 'profile' => 'users#show'
   root 'home#index'
 end
