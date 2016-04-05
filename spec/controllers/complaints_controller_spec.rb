@@ -6,7 +6,7 @@ describe ComplaintsController do
   let(:city) { create(:city) }
 
   describe "GET #index" do
-    let(:complaint_zika) { create :complaint, city_id: city.id, state_id: city.state.id }
+    let(:complaints) { create_list(:complaint, 2)}
 
     it "renders :index template" do
       get :index
@@ -15,7 +15,7 @@ describe ComplaintsController do
 
     it "assings @complaints" do
       get :index
-      expect(assigns(:complaints)).to eq([complaint_zika])
+      expect(assigns(:complaints)).to eq(complaints)
     end
   end
 
@@ -159,4 +159,3 @@ describe ComplaintsController do
   end
 
 end
-
