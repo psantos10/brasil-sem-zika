@@ -21,7 +21,7 @@ modulejs.define('ui/facebook', function(){
 					if (response.authResponse) {
 						return window.location = '/users/auth/facebook/callback';
 					}
-				});
+				}, {scope: 'email'});
 			});
 
 			$(".sign_out").click(function(e){
@@ -36,4 +36,3 @@ modulejs.define('ui/facebook', function(){
 
 	return facebook();
 });
-

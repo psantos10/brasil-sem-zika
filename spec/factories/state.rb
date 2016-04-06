@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :state do
-    name 'Westeros'
+    sequence(:name) { |n| "Westeros-#{n}" }
     acronym 'WE'
   end
 end
