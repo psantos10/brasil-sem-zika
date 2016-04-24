@@ -10,7 +10,7 @@ RSpec.feature 'Create a complaint', type: :feature do
   context 'when a user fills the form with valid data' do
     it 'allows the creation' do
       visit new_complaint_path
-      fill_in 'complaint_cep', with: '48370-000'
+      fill_in 'complaint[cep]', with: '48370-000'
       fill_in 'complaint[address]', with: 'Rua da linha, 06'
       select 'Westeros', from: 'complaint[state_id]'
       select 'Winterfell', from: 'complaint[city_id]'
