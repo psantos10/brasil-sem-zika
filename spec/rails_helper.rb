@@ -20,4 +20,4 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
 end
 
-Capybara.default_wait_time = 20
+Capybara.default_max_wait_time = 20
